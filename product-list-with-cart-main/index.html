@@ -1,29 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
   <title>Frontend Mentor | Product list with cart</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+  <link rel="stylesheet" href="index.css">
+
 </head>
+
 <body>
 
-  Desserts
 
-  Waffle with Berries
+  <div class="content-area">
+
+    <div class="header-box">
+      <h1 class="header">Desserts</h1>
+    </div>
+
+    <div class="cart-box-area">
+
+      <!-- 1 -->
+      <div class="cart-box-top"> 
+        <h1 class="quantity-count">Your Cart (7)</h1>
+      </div>
+
+      <!-- 2 -->
+      <div class="cart-box-middle">
+        <div class="detail-box">
+          <div class="item-detail">
+            <p class="item-name">Waffle</p>
+            <span class="quantity-item">x1</span>
+            <span class="price-per-unit">@$5.50</span>
+            <span class="sum-of-unit">$5.50</span>
+          </div>
+
+          <span class="material-symbols-outlined cancle-order-unit">cancel</span>
+
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="cart-buttom">
+        <div class="summary">
+          <span class="summary-text">Order Total</span>
+          <span class="summary-price">$46.50</span>
+        </div>
+
+        <div class="carbon-nature">
+          <div class="carbon-nature-content">
+            <span class="material-symbols-outlined carbon-nature-icon">eco</span>
+            <span class="carbon-nature-text">This is a <span class="highlight">carbon-nature</span> delivery</span>
+          </div>
+        </div>
+
+        <div class="confirm-order-button">
+          <span class="confirm-order-text">Confirm Order</span>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="item-list-area">
+
+      <div class="item-box">
+
+        <img src="./assets/images/image-waffle-desktop.jpg" alt="" srcset="">
+
+        <div class="button-box">
+          <span class="material-symbols-outlined add-cart-icon">add_shopping_cart</span>
+          <span class="add-cart-text">Add to Cart</span>
+        </div>
+
+        <div class="detail-menu">
+          <p class="tag-name">Waffle</p>
+          <p class="menu-name">Waffle with Berries</p>
+          <p class="price-tag">$6.50</p>
+        </div>
+
+      </div>
+
+      <div class="item-box">
+
+        <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="" srcset="">
+
+        <div class="button-box">
+          <span class="material-symbols-outlined add-cart-icon">add_shopping_cart</span>
+          <span class="add-cart-text">Add to Cart</span>
+        </div>
+
+        <div class="detail-menu">
+          <p class="tag-name">Waffle1</p>
+          <p class="menu-name">Waffle with Berries</p>
+          <p class="price-tag">$6.50</p>
+        </div>
+
+      </div>
+
+      <div class="item-box">
+
+        <img src="./assets/images/image-macaron-desktop.jpg" alt="" srcset="">
+
+        <div class="button-box">
+          <span class="material-symbols-outlined add-cart-icon">add_shopping_cart</span>
+          <span class="add-cart-text">Add to Cart</span>
+        </div>
+
+        <div class="detail-menu">
+          <p class="tag-name">Waffle2</p>
+          <p class="menu-name">Waffle with Berries</p>
+          <p class="price-tag">$6.50</p>
+        </div>
+
+      </div>
+
+      <div class="item-box">
+
+        <img src="./assets/images/image-tiramisu-desktop.jpg" alt="" srcset="">
+
+        <div class="button-box">
+          <span class="material-symbols-outlined add-cart-icon">add_shopping_cart</span>
+          <span class="add-cart-text">Add to Cart</span>
+        </div>
+
+        <div class="detail-menu">
+          <p class="tag-name">Waffle</p>
+          <p class="menu-name">Waffle with Berries</p>
+          <p class="price-tag">$6.50</p>
+        </div>
+
+      </div>
+
+      <div class="item-box">
+
+        <img src="./assets/images/image-baklava-desktop.jpg" alt="" srcset="">
+
+        <div class="button-box">
+          <span class="material-symbols-outlined add-cart-icon">add_shopping_cart</span>
+          <span class="add-cart-text">Add to Cart</span>
+        </div>
+
+        <div class="detail-menu">
+          <p class="tag-name">Waffle</p>
+          <p class="menu-name">Waffle with Berries</p>
+          <p class="price-tag">$6.50</p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+  </div>
+  </div>
+
+
+
+  <!-- Waffle with Berries
   Waffle
   6.50
-  Add to Cart
+  Add to Cart -->
 
-  Vanilla Bean Crème Brûlée
+  <!-- Vanilla Bean Crème Brûlée
   Crème Brûlée
   7.00
   Add to Cart
@@ -61,14 +214,15 @@
   Vanilla Panna Cotta
   Panna Cotta
   6.50
-  Add to Cart
+  Add to Cart -->
 
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
+  <!-- Your Cart (Quantity) -->
+  <!-- Your added items will appear here -->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
+
 </html>
