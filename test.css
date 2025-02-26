@@ -1,28 +1,23 @@
 
 
-.container{
-    border: 3px solid #333;
-    width:80vw;
-    height: 30vh;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas:
-        'header cart-box'
-        'content-box cart-box'
-        ;
-}
 
-.header-box{
-    grid-area: header;
-    border: 3px solid green;
-    /* grid-column: 1; */
+@media screen and (min-width: 800px) {
+    .button-comfirm{
+        /* okay */
+        display: block; 
+    }
+    .button{
+        /* ok */
+        display: none;
+    }
 }
-.cart-list{
-    grid-area: cart-box;
-    border: 3px solid salmon;
-}
-.box3{
-    grid-area: content-box;
-    border: 3px solid skyblue
+@media screen and (min-width: 400px) {
+    .button-comfirm{
+        display: none;
+    }
+    .button{
+        display: block;
+    }
+
+    
 }
